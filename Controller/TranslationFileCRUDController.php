@@ -25,20 +25,20 @@ class TranslationFileCRUDController extends CRUDController
      *
      * @return RedirectResponse
      */
-    protected function redirectTo($object)
+    protected function redirectTo($object, Request $request = null)
     {
         return new RedirectResponse($this->generateUrl('admin_lexik_translation_transunit_list'));
     }
 
-    public function listAction($id = null) {
+    public function listAction(Request $request = null) {
         return $this->redirect($this->admin->generateUrl('create'));
     }
 
-    public function editAction($id = null) {
+    public function editAction($id = null, Request $request = null) {
         return $this->redirect($this->admin->generateUrl('create'));
     }
 
-    public function deleteAction($id) {
+    public function deleteAction($id, Request $request = null) {
         return $this->redirect($this->admin->generateUrl('create'));
     }
 }
