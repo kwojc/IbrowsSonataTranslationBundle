@@ -35,7 +35,8 @@
 
         <service id="ibrows_sonata_translation.translationfileadmin.orm"
                  class="Ibrows\SonataTranslationBundle\Admin\TranslationFileAdmin">
-            <tag name="sonata.admin" manager_type="orm"/>
+            <tag name="sonata.admin" manager_type="orm" group="group.translation"
+                 label_catalogue="IbrowsSonataTranslationBundle" label="translation.translation_file"/>
             <argument/>
             <argument>Ibrows\SonataTranslationBundle\Entity\TranslationFile</argument>
             <argument>IbrowsSonataTranslationBundle:TranslationFileCRUD</argument>
