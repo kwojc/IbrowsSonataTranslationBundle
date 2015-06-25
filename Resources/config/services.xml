@@ -40,6 +40,9 @@
             <argument/>
             <argument>Ibrows\SonataTranslationBundle\Entity\TranslationFile</argument>
             <argument>IbrowsSonataTranslationBundle:TranslationFileCRUD</argument>
+            <call method="setTranslationDomain">
+                <argument>IbrowsSonataTranslationBundle</argument>
+            </call>
             <call method="setTransUnitManager">
                 <argument type="service" id="lexik_translation.trans_unit.manager"/>
             </call>
